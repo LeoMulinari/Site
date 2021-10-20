@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Primeiro Site Leo</title>
 </head>
 <body>
@@ -106,41 +107,55 @@
       <h2 class="display-3 mt-5">CONTATO</h2>
       <form>
         <div class="row">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Insira seu email" name="email">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Insira seu nome" name="Nome">
-          </div>
-          <div class="col">
-            <input type="number" class="form-control" placeholder="Insira seu telefone" name="telefone">
+          <div class="col-md-5">
+            <div class="input-group m-3">
+              <span class="input-group-text"><i class="ri-user-3-fill"></i></span>
+              <input type="text" class="form-control" placeholder="Insira seu nome">
+            </div>
+            <div class="input-group m-3">
+              <span class="input-group-text"><i class="ri-mail-open-fill"></i></span>
+              <input type="email" class="form-control" placeholder="Insira seu email">
+            </div>
+            <div class="input-group m-3">
+              <span class="input-group-text"><i class="ri-phone-fill"></i></span>
+              <input type="text" class="form-control" placeholder="Insira seu telefone">
+            </div>
           </div> 
-            <textarea class="form-control mt-4" rows="5" placeholder="Deixe sua mensagem aqui!" name="text"></textarea>
-        </div>
-        <button type="submit" class="mt-4 btn btn-primary"><span>Enviar</span></button>
+          <div class="col ms-3">
+            <textarea class="form-control mt-3 pb-3" rows="5" placeholder="Deixe sua mensagem aqui!" name="text"></textarea>
+          </div>
+          
+            <div class="container">
+            
+            <div class="row">
+              <div class="col-md-12"><button type="submit" class="mt-3 btn btn-lg btn-primary float-end"><span>Enviar</span></button></div></div>
+              
+            
+          </div>
+        
       </form>
     </div>
   </section>
   <!--Sessão de footer! WOW-->
   <section>
     <div class="container-flex bg-dark">
-      <div class="row">
-        <div class="col">
-          <h3 class="display-6 text-white">Mapa do Site</h3>
-          <p class="text-white">Início</p>
-          <p class="text-white">Sobre mim</p>
-          <p class="text-white">Animes</p>
-          <p class="text-white">Contato</p>
+      <div class="d-flex justify-content-md-evenly">
+        <div class="bd-highlight">
+          <h3 class="display-6 text-white text-center">Mapa do Site</h3>
+          <p class="text-white text-center h5 my-3"><a href="#">Início</a></p>
+          <p class="text-white text-center h5 my-3"><a href="#sobre">Sobre mim</a></p>
+          <p class="text-white text-center h5 my-3"><a class="scrollto" href="#animes">Animes</a></p>
+          <p class="text-white text-center h5 my-3"><a href="#contato">Contato</a></p>
         </div>
-        <div class="col">
-          <h3 class="display-6 text-white">Redes Sociais</h3>
-          <p class="text-white">Email:  leo.mulinari@gmail.com</p>
-          <p class="text-white">Facebook:<a href="https://www.facebook.com/leonardo.mulinari.1" target="_blank">Leonardo Mulinari</a> </p>
-          <p class="text-white">Instagram:<a href="https://www.instagram.com/leomulinari09/?hl=pt-br" target="_blank"> @leomulinari09</a></p>
-          <p class="text-white">Twitter: <a href="https://twitter.com/Slipkleo9" target="_blank">@Slipkleo9</a></p>
+        <div class="bd-highlight">
+          <h3 class="display-6 text-white text-center">Redes Sociais</h3>
+          <p class="text-white text-center h5 my-3"><i class="ri-mail-open-line ri-lg"></i> Email:  leo.mulinari@gmail.com</p>
+          <p class="text-white text-center h5 my-3"><i class="ri-facebook-line ri-lg"></i> Facebook: <a href="https://www.facebook.com/leonardo.mulinari.1" target="_blank">Leonardo Mulinari</a> </p>
+          <p class="text-white text-center h5 my-3"><i class="ri-instagram-line ri-lg"></i> Instagram: <a href="https://www.instagram.com/leomulinari09/?hl=pt-br" target="_blank"> @leomulinari09</a></p>
+          <p class="text-white text-center h5 my-3"><i class="ri-twitter-line ri-lg"></i> Twitter: <a href="https://twitter.com/Slipkleo9" target="_blank">@Slipkleo9</a></p>
         </div>
-      </div>
     </div>
+  </div>
   </section>
 </body>
 </html>
