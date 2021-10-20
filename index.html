@@ -2,6 +2,8 @@
 <head>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Primeiro Site Leo</title>
 </head>
 <body>
@@ -21,10 +23,10 @@
           </li>
         </ul>
       </nav>
-    <div class="text-center">
+    <div data-aos="fade-zoom-in" data-aos-duration="3000" class="text-center">
       <img class="img-fluid" src="./img/banner1.png" alt="">
     </div>
-    <section class="pt-5" id="sobre">
+    <section data-aos="fade-up" data-aos-duration="1000" class="pt-5" id="sobre">
     <div class="container">
       <h2 class="display-3 mt-5">SOBRE MIM</h2> <br>
       <P class="fs-3">Meu nome é Leonardo Mulinari, tenho 17 anos e atualmente estou cursando na 
@@ -35,7 +37,7 @@
     </div>
   </section>
     <!--Sessão de Animes! WOW-->
-    <section class="pt-5" id="animes">
+    <section data-aos="fade-up" data-aos-duration="1000" class="pt-5" id="animes">
     <div class="container" >
       <h2 class="display-3 mt-5">ANIMES</h2>
       <p class="fs-3">Abaixo estão alguns dos meus animes favoritos!</p>
@@ -102,7 +104,7 @@
     </div>
   </section>
   <!--Sessão de contato! WOW-->
-  <section class="pt-5" id="contato">
+  <section data-aos="zoom-in" data-aos-duration="1000" class="pt-5" id="contato">
     <div class="container" >
       <h2 class="display-3 mt-5">CONTATO</h2>
       <form>
@@ -137,7 +139,7 @@
     </div>
   </section>
   <!--Sessão de footer! WOW-->
-  <section>
+  <section data-aos="fade-up" data-aos-duration="1000">
     <div class="container-flex bg-dark">
       <div class="d-flex justify-content-md-evenly">
         <div class="bd-highlight">
@@ -158,4 +160,7 @@
   </div>
   </section>
 </body>
+<script>
+  AOS.init();
+</script>
 </html>
