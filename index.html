@@ -4,6 +4,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+
     <title>Primeiro Site Leo</title>
 </head>
 <body>
@@ -45,12 +47,14 @@
 
         <div class="col">
           <div class="card">
+            <div class="bg-image hover-zoom">
             <img class="card-img-top" src="./img/onepiece.jpg" width="100px" height="550px" alt="Card image">
+          </div>
           <div class="card-body">
             <h3 class="card-title">One Piece</h3>
             <p class="card-text">One Piece segue a história de um grupo de piratas liderado por Monkey D. Luffy.</p>
           </div>
-          </div>
+        </div>
         </div>
         <div class="col">
           <div class="card">
@@ -162,5 +166,20 @@
 </body>
 <script>
   AOS.init();
+</script>
+<script>
+  $(document).ready(function() {
+ // executes when HTML-Document is loaded and DOM is ready
+console.log("document is ready");
+
+  $( ".card" ).hover(function() { 
+    $(this).addClass('shadow-lg').css('cursor',); 
+  }, function() {
+    $(this).removeClass('shadow-lg');
+  }
+);
+
+// document ready
+});
 </script>
 </html>
