@@ -1,46 +1,146 @@
 <html>
 <head>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Primeiro Site Leo</title>
 </head>
 <body>
-    <header class="menu-principal">
-        <main>        
-            <div class="header1">
-                <div class="logo"> 
-                    <img src="./img/logo.png" width="80"  height="55"/>
-                </div>
-                <div class="redes-sociais">
-                    <ul>
-                        <li><a href=""><img src="./img/facebook.png"    width="35"  height="35"/></a></li>
-                        <li><a href=""><img src="./img/instagram.png"  width="35"  height="35"/></a></li>
-                        <li><a href=""><img src="./img/twitter.png"  width="35"  height="35"/></a></li>
-                    </ul>
-                </div>
-            </div>    
-        </main>
-    </header>
-    <main class="coluna100 menu-url">
-        <div class="header2"> 
-            <div class="menu">
-                <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Sobre mim</a></li>
-                    <li><a href="">Animes</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </div>
-            <div class="busca">
-                <input placeholder="Pesquise no Site" type="text"/>
-            </div>
-        </div>
-    </main>     
+    <nav class="navbar navbar-expand-lg bg-primary justify-content-center sticky-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item hover-shadow p-3">
+              <a class="hero text-white fs-2" href="#">Início</a>
+          </li>
+          <li class="nav-item p-3">
+              <a class="hero text-white fs-2" href="#sobre">Sobre mim</a>
+          </li>
+          <li class="nav-item p-3">
+              <a class="hero text-white fs-2" href="#animes">Animes</a>
+          </li>
+          <li class="nav-item p-3">
+              <a class="hero text-white fs-2" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
     <div class="banner">
-        <img src="./img/banner1.png" width="100%" alt="">
-    </div>      
-    <div class="sobre">
-        <h1>Sobre mim</h1>
-        <p>Meu nome</p>
+      <img src="./img/banner1.png" alt="">
     </div>
+    <section class="pt-5" id="sobre">
+    <div class="container">
+      <h2 class="display-3 mt-5">SOBRE MIM</h2> <br>
+      <P class="fs-3">Meu nome é Leonardo Mulinari, tenho 17 anos e atualmente estou cursando na 
+        faculdade de Engenharia da Computação pela UEPG. 
+        Meu hobbie favorito é passar horas jogando com meus amigos e vendo animes. 
+        Este é meu processo seletivo para a Empresa Jr E2C.
+      </P>
+    </div>
+  </section>
+    <!--Sessão de Animes! WOW-->
+    <section class="pt-5" id="animes">
+    <div class="container" >
+      <h2 class="display-3 mt-5">ANIMES</h2>
+      <p class="fs-3">Abaixo estão alguns dos meus animes favoritos!</p>
+      <div class="row">
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="./img/onepiece.jpg" width="100px" height="550px" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title">One Piece</h3>
+            <p class="card-text">One Piece segue a história de um grupo de piratas liderado por Monkey D. Luffy.</p>
+          </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="./img/blackclover.png" width="100px" height="550px" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title">Black Clover</h3>
+            <p class="card-text">A história acompanha os dois garotos que competem entre si para se tornar o Rei Mago.</p>
+          </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="./img/mob.jpg" width="100px" height="550px" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title">Mob Psycho 100</h3>
+            <p class="card-text">A história desenrola-se à volta de “Mob”, um jovem que explodirá se a sua capacidade emocional chegar aos 100%.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="./img/steins.png" width="100px" height="550px" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title">Steins;Gate</h3>
+            <p class="card-text">Steins;Gate acontece em Akihabara e é sobre um grupo de amigos que customizaram seu microondas em um dispositivo que pode mandar mensagens para o passado.</p>
+          </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="./img/bokuhero.png" width="100px" height="550px" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title">Boku no Hero Academia</h3>
+            <p class="card-text">Boku no Hero conta a história de Izuku "Deku" Midoriya, um jovem que nasceu sem Indivualidade (poder) em um mundo em que 80% da população manifesta ao menos uma desde criança.</p>
+          </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="./img/fullmetal.jpg" width="100px" height="550px" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title">Fullmetal Alchemist: Brotherhood </h3>
+            <p class="card-text">Dois irmãos alquimistas acabam de iniciar a maior e mais perigosa jornada de suas vidas: partiram em uma busca alucinante por uma poderosa pedra filosofal.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Sessão de contato! WOW-->
+  <section class="pt-5" id="contato">
+    <div class="container" >
+      <h2 class="display-3 mt-5">CONTATO</h2>
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Insira seu email" name="email">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Insira seu nome" name="Nome">
+          </div>
+          <div class="col">
+            <input type="number" class="form-control" placeholder="Insira seu telefone" name="telefone">
+          </div> 
+            <textarea class="form-control mt-4" rows="5" placeholder="Deixe sua mensagem aqui!" name="text"></textarea>
+        </div>
+        <button type="submit" class="mt-4 btn btn-primary"><span>Enviar</span></button>
+      </form>
+    </div>
+  </section>
+  <!--Sessão de footer! WOW-->
+  <section>
+    <div class="container-flex bg-dark">
+      <div class="row">
+        <div class="col">
+          <h3 class="display-6 text-white">Mapa do Site</h3>
+          <p class="text-white">Início</p>
+          <p class="text-white">Sobre mim</p>
+          <p class="text-white">Animes</p>
+          <p class="text-white">Contato</p>
+        </div>
+        <div class="col">
+          <h3 class="display-6 text-white">Redes Sociais</h3>
+          <p class="text-white">Email:  leo.mulinari@gmail.com</p>
+          <p class="text-white">Facebook:<a href="https://www.facebook.com/leonardo.mulinari.1" target="_blank">Leonardo Mulinari</a> </p>
+          <p class="text-white">Instagram:<a href="https://www.instagram.com/leomulinari09/?hl=pt-br" target="_blank"> @leomulinari09</a></p>
+          <p class="text-white">Twitter: <a href="https://twitter.com/Slipkleo9" target="_blank">@Slipkleo9</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

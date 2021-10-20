@@ -1,0 +1,16 @@
+@import "../node_modules/bootstrap/scss/functions.scss";
+
+
+//importando cores
+$indigo:  #6610f2;
+
+$indigo-600: shade-color($indigo, 20%);
+
+$primary:$indigo-600;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
