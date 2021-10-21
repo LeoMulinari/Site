@@ -8,6 +8,23 @@ $indigo-600: shade-color($indigo, 20%);
 
 $primary:$indigo-600;
 
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+    word-wrap: break-word;
+
+    background-clip: border-box;
+    transition: transform .3s ease;
+    
+  
+  }
+
+  .card:hover{
+      transform: scale(1.05);
+  }
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
