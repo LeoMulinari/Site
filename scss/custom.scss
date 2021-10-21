@@ -7,6 +7,9 @@ $indigo:  #6610f2;
 $indigo-600: shade-color($indigo, 20%);
 
 $primary:$indigo-600;
+$secondary:tint-color( #dc3545 , 60%);
+@import"../node_modules/bootstrap/scss/variables.scss";
+
 
 .card {
     position: relative;
@@ -14,15 +17,35 @@ $primary:$indigo-600;
     flex-direction: column;
     min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
     word-wrap: break-word;
-
     background-clip: border-box;
     transition: transform .3s ease;
-    
   
   }
 
   .card:hover{
       transform: scale(1.05);
+  }
+
+  a{
+      color:$white;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none; 
+    color: $white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: $secondary !important;
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: $secondary !important;
   }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
